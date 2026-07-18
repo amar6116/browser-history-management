@@ -25,7 +25,7 @@ Node* createNode(char url[]) {
 
 void deleteForwardHistory(Node *node) {
     if (node == NULL || node->next == NULL)
-        return;
+        return 0;
 
     Node *temp = node->next;
     Node *nextNode;
